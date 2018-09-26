@@ -47,30 +47,10 @@ public class SimpleMVFxmlController implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
-		final FileChooser filechooser = new FileChooser();
-		 fileOpen.setOnAction(new EventHandler<ActionEvent>(){
-
-			@Override
-			public void handle(ActionEvent arg0) {
-				filechooser.setInitialDirectory(new File("C:\\Users"));
-				File selectfile = filechooser.showOpenDialog(null);
-
-				if (selectfile !=null)
-				{
-					String filelink = selectfile.toURI().toString();
-					
-					media = new Media(filelink);
-					mediaplayer = new MediaPlayer(media);
-					MV.setMediaPlayer(mediaplayer);
-					mediaplayer.setAutoPlay(true);
-					
-				}else {
-					System.out.println("File not found.");
-				}
-				
-			}
-			 
-		 });
+		media = new Media(filelink);
+		mediaplayer = new MediaPlayer(media);
+		MV.setMediaPlayer(mediaplayer);
+		mediaplayer.setAutoPlay(true);
 		 
 		 
 		 //Resize  player

@@ -1,0 +1,21 @@
+/* style.css */
+
+
+#stage{
+	-fx-background-color: #123455;
+}
+#volumeSlider{
+	-fx-color: black;
+	
+}
+
+#currentTime {
+	-fx-text-fill: white;
+}
+#lastTime{
+	-fx-text-fill: white;
+}
+
+#Hbox{
+	
+}

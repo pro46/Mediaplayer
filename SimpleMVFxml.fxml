@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+
+<AnchorPane fx:id="stage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SimpleMVFxmlController">
+   <children>
+      <MediaView fx:id="MV" fitHeight="400.0" fitWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Slider fx:id="slider" layoutY="329.0" opacity="0.8" prefHeight="0.0" prefWidth="600.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <HBox fx:id="Hbox" alignment="CENTER" layoutX="100.0" layoutY="343.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.84" prefHeight="28.0" prefWidth="401.0" spacing="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="fileOpen" mnemonicParsing="false" text="Files" textAlignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#backward" text="-10" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#play" text="Play" textAlignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#pause" text="Pause" textAlignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#forward" text="+10" textAlignment="CENTER" />
+            <Slider fx:id="volumeSlider" opacity="0.8" prefHeight="14.0" prefWidth="122.0" />
+            <Button mnemonicParsing="false" onAction="#mute" text="Mute" textAlignment="CENTER" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label fx:id="currentTime" alignment="CENTER" layoutX="4.0" layoutY="378.0" prefHeight="17.0" prefWidth="54.0" text="00:00:00" textAlignment="CENTER" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="0.0" />
+      <Label fx:id="lastTime" alignment="CENTER" layoutX="600.0" layoutY="378.0" prefHeight="17.0" prefWidth="54.0" text="00:00:00" textAlignment="CENTER" AnchorPane.bottomAnchor="34.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>

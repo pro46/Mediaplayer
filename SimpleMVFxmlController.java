@@ -47,7 +47,7 @@ public class SimpleMVFxmlController implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
-		media = new Media(filelink);
+		media = new Media("SUIT_PUNJABI.mp4");
 		mediaplayer = new MediaPlayer(media);
 		MV.setMediaPlayer(mediaplayer);
 		mediaplayer.setAutoPlay(true);
@@ -74,8 +74,7 @@ public class SimpleMVFxmlController implements Initializable {
 		
 
 		
-	//	slider.setValue(mediaplayer.getCurrentTime().toSeconds());
-		
+	
 	
 		
 	}
@@ -103,11 +102,7 @@ public class SimpleMVFxmlController implements Initializable {
 	
 	
 	
-/*	public void startTime(ActionEvent event){
-        mediaplayer.seek(Duration.seconds( currentTime.getCurrentTime()));
-	    }
-*/
-	
+
 	
 	
 	
